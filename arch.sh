@@ -11,6 +11,11 @@ echo ' '
 echo 'Setup of Android Build Envirnoment Is Done."
 sleep 2
 echo ' '
+echo 'Setting Up Git Config Credentials'
+bash setup/git.sh
+echo 'Git Config Added To The WorkStation Successfully.'
+sleep 2
+echo ' '
 echo 'Setting Up Oh My ZSH Theme.'
 echo 'Making powerlevel10k default theme.'
 bash zsh/zsh.sh
