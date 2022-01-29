@@ -5,7 +5,7 @@ for package in $packages; do
     echo "Installing $package"
     git clone https://github.com/SALMANKHANPM/"$package".git
     cd "$package" || exit
-    makepkg -si --skippgpcheck --noconfirm --needed
+    makepkg -si --skippgpcheck
     cd - || exit
     rm -rf "$package"
 done
