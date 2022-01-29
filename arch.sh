@@ -20,6 +20,10 @@ echo 'Setting Up SSH For easier usage of various tools.'
 bash setup/sshid.sh
 echo ' '
 sleep 2
+echo 'Initalizing Requirement for Glibc 2.34.'
+bash setup/glibc.sh
+sleep 2
+echo ' '
 echo 'Setting Up Oh My ZSH Theme.'
 echo 'Making powerlevel10k default theme.'
 bash zsh/zsh.sh
